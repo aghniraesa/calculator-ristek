@@ -17,25 +17,25 @@ public class App {
     public static void main(String[] args) {
         System.out.println("Pilihan: " +
                 "1. Penambahan");
-       while (true) {
-           App app = new App();
-           Scanner input = new Scanner(System.in);
-           int pilihan = input.nextInt();
-           int angkaPertama;
-           int angkaKedua;
-           if (pilihan == 1) {
-               angkaPertama = input.nextInt();
-               angkaKedua = input.nextInt();
-               System.out.println(app.addition(angkaKedua, angkaPertama));
-           } else if (pilihan == 2) {
+        while (true) {
+            App app = new App();
+            Scanner input = new Scanner(System.in);
+            int pilihan = input.nextInt();
+            int angkaPertama;
+            int angkaKedua;
+            if (pilihan == 1) {
+                angkaPertama = input.nextInt();
+                angkaKedua = input.nextInt();
+                System.out.println(app.addition(angkaKedua, angkaPertama));
+            } else if (pilihan == 2) {
 
-           } else if (pilihan == 3) {
+            } else if (pilihan == 3) {
 
-           } else if (pilihan == 4) {
+            } else if (pilihan == 4) {
 
-           } else {
-               throw new NullPointerException();
-           }
-       }
+            } else {
+                throw new NullPointerException();
+            }
+        }
     }
 }
