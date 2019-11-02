@@ -3,15 +3,9 @@
  */
 package com.gojek.ristek;
 
-import java.util.Scanner;
-
 public class App {
     public String getGreeting() {
         return "Hello world.";
-    }
-
-    public int addition(int angkaPertama, int angkaKedua) {
-        return angkaKedua + angkaPertama;
     }
 
     public static void main(String[] args) {
@@ -37,5 +31,6 @@ public class App {
                 throw new NullPointerException();
             }
         }
+        System.out.println(new App().getGreeting());
     }
 }
