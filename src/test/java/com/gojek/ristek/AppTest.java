@@ -7,12 +7,14 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
-    @Test void appHasAGreeting() {
+    @Test
+    void appHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
 
-    @Test void additionTest() {
+    @Test
+    void additionTest() {
         App classUnderTest = new App();
         assertEquals(7, classUnderTest.addition(2, 5));
     }
@@ -26,6 +28,12 @@ class AppTest {
     @Test
     void multiplyTest() {
         App classUnderTest = new App();
-        assertEquals(3, classUnderTest.multiply(6, 2));
+        assertEquals(12, classUnderTest.multiply(6, 2));
+    }
+
+    @Test
+    void divideTest() {
+        App classUnderTest = new App();
+        assertEquals(2, classUnderTest.divide(6, 3));
     }
 }

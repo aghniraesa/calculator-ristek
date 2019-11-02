@@ -18,6 +18,10 @@ public class App {
         return angkaPertama - angkaKedua;
     }
 
+    public int multiply(int angkaPertama, int angkaKedua) {
+        return angkaKedua * angkaPertama;
+    }
+
     public static void main(String[] args) {
         App app = new App();
         while (true) {
@@ -40,7 +44,11 @@ public class App {
                 angkaKedua = input.nextInt();
                 System.out.println(app.subtraction(angkaPertama, angkaKedua));
             } else if (pilihan == 3) {
-
+                System.out.print("Masukkan angka pertama: ");
+                angkaPertama = input.nextInt();
+                System.out.print("Masukkan angka kedua: ");
+                angkaKedua = input.nextInt();
+                System.out.println(app.multiply(angkaPertama, angkaKedua));
             } else if (pilihan == 4) {
 
             } else {
