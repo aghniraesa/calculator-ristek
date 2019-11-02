@@ -11,12 +11,12 @@ dan membagi dua angka.
 ##Installation Guide
 1. Clone this repo
 2. 
-```$xslt
+```
 ./gradle build
 ```
 
 ##Run Guide
-```$xslt
+```
 ./gradle run
 ```
 
