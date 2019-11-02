@@ -19,7 +19,11 @@ public class App {
     }
 
     public int multiply(int angkaPertama, int angkaKedua) {
-        return angkaKedua * angkaPertama;
+        return  angkaPertama * angkaKedua;
+    }
+
+    public int divide(int angkaPertama, int angkaKedua) {
+        return angkaPertama / angkaKedua;
     }
 
     public static void main(String[] args) {
@@ -50,7 +54,11 @@ public class App {
                 angkaKedua = input.nextInt();
                 System.out.println(app.multiply(angkaPertama, angkaKedua));
             } else if (pilihan == 4) {
-
+                System.out.print("Masukkan angka pertama: ");
+                angkaPertama = input.nextInt();
+                System.out.print("Masukkan angka kedua: ");
+                angkaKedua = input.nextInt();
+                System.out.println(app.divide(angkaPertama, angkaKedua));
             } else {
                 System.out.println("Sampai jumpa!");
                 return;
