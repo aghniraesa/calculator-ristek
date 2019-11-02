@@ -3,34 +3,50 @@
  */
 package com.gojek.ristek;
 
+import java.util.Scanner;
+
 public class App {
     public String getGreeting() {
         return "Hello world.";
     }
 
+    public int addition(int angkaPertama, int angkaKedua) {
+        return angkaPertama + angkaKedua;
+    }
+
+    public int subtraction(int angkaPertama, int angkaKedua) {
+        return angkaPertama - angkaKedua;
+    }
+
     public static void main(String[] args) {
-        System.out.println("Pilihan: " +
-                "1. Penambahan");
+        App app = new App();
         while (true) {
-            App app = new App();
+            System.out.println("Pilihan: \n1. Penambahan\n2. Pengurangan\n3. Perkalian\n4. Pembagian");
+            System.out.print("Masukkan Pilihan: ");
             Scanner input = new Scanner(System.in);
             int pilihan = input.nextInt();
             int angkaPertama;
             int angkaKedua;
             if (pilihan == 1) {
+                System.out.print("Masukkan angka pertama: ");
                 angkaPertama = input.nextInt();
+                System.out.print("Masukkan angka kedua: ");
                 angkaKedua = input.nextInt();
                 System.out.println(app.addition(angkaKedua, angkaPertama));
             } else if (pilihan == 2) {
-
+                System.out.print("Masukkan angka pertama: ");
+                angkaPertama = input.nextInt();
+                System.out.print("Masukkan angka kedua: ");
+                angkaKedua = input.nextInt();
+                System.out.println(app.subtraction(angkaPertama, angkaKedua));
             } else if (pilihan == 3) {
 
             } else if (pilihan == 4) {
 
             } else {
-                throw new NullPointerException();
+                System.out.println("Sampai jumpa!");
+                return;
             }
         }
-        System.out.println(new App().getGreeting());
     }
 }
