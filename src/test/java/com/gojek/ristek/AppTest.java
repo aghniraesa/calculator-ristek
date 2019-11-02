@@ -16,4 +16,10 @@ class AppTest {
         App classUnderTest = new App();
         assertEquals(7, classUnderTest.addition(2, 5));
     }
+
+    @Test
+    void subtractionTest() {
+        App classUnderTest = new App();
+        assertEquals(3, classUnderTest.subtration(5, 2));
+    }
 }
